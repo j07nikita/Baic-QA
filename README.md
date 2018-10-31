@@ -1,13 +1,29 @@
-# Read AI
-
-A simple artificial intelligence capable of basic reading comprehension. 
+# Baisc Reading Comprehension
 
 ## Setup
-
 Install Python 2.7
-
 pip install nltk
-
 [Download Stanford Parser](http://nlp.stanford.edu/software/stanford-parser-full-2015-04-20.zip) 
+python2 read.py
 
-python2 readai.py
+## Baseline
+Build Triples (S,V,O) (First without parser and then with) - Find the triples (embeddings) that match with the question and output them.
+
+## Approach
+We are building triplets (sunject, verb and object) and using them to identify answers for a question given.
+To identify relationship betweens objects (nouns) in the sentence consider this sentence 
+"_Sita won a race against her brother to the bottom of the hill".
+
+
+A key observation to answering questions is that they can be reworded to be fill in the blanks
+Who did Sita win a race against? -> Sita won a race against _______
+
+## Parsing
+The first thing we have to do is parse the sentence to see the sentence structure and to determine which parts of a sentence are objects, verbs and propositions. To do this, we used the Stanford parser.
+
+## Describing
+We can use the parse tree to build the word graph by doing it recursively. For each grammar rule, we need to describe how to build the word graph.
+
+## Answer
+We can answer questions by converting the question to a “fill in the blank” and then following the words in the “fill in the blank” in the word graph to the answer. 
+
