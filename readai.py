@@ -411,34 +411,3 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-
-# Example:
-"""
-Mary went sledding
-Where did Mary go? sledding
-
-The boy played soccer with a ball
-What did the boy play? soccer
-What did the boy play soccer with? a ball
-
-Mary went to the mall
-Where did Mary go? to the mall
-Where did Mary go to? the mall
-
-Mary likes eating peanuts
-What does Mary like eating? peanuts
-What does Mary like? eating peanuts
-
-Mary likes to eat peanuts
-What does Mary like? To eat peanuts
-What does Mary like to eat? peanuts
-
-Mark likes to smoke
-What does Mary like? to smoke
-
-Blueberries are blue
-What color are blueberries? blue
-
-James ran because James was scared
-Why did James run? because James was scared
-"""
