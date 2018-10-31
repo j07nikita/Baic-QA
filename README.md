@@ -11,12 +11,11 @@ Build Triples (S,V,O) (First without parser and then with) - Find the triples (e
 
 ## Approach
 We are building triplets (sunject, verb and object) and using them to identify answers for a question given.
-To identify relationship betweens objects (nouns) in the sentence consider this sentence 
-"_Sita won a race against her brother to the bottom of the hill".
+To identify relationship betweens objects (nouns) in the sentence consider this sentence                                    <br/> Sita won a race against her brother to the bottom of the hill.
 
+![](https://github.com/j07nikita/Baic-QA/blob/master/sita.png)
 
-A key observation to answering questions is that they can be reworded to be fill in the blanks
-Who did Sita win a race against? -> Sita won a race against _______
+A key observation to answering questions is that they can be reworded to be fill in the blanks.                               <br/> Who did Sita win a race against? -> Sita won a race against _______
 
 ## Parsing
 The first thing we have to do is parse the sentence to see the sentence structure and to determine which parts of a sentence are objects, verbs and propositions. To do this, we used the Stanford parser.
