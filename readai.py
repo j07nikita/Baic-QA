@@ -226,7 +226,7 @@ def describe(tree):
         return action, action_node
     if matches('( S ( VP ) )', tree):
         return describe(tree[0])
-
+# Sentences phrase-tree
     # NOUNS
     if matches('( NP )', tree):
         # Ex: The dog
@@ -336,7 +336,7 @@ def describe(tree):
 
     raise ValueError("ERROR reading " + str(tree))
 
-
+## return based on labels
 def answer(tree):
     tree = tree[0]
     if tree.label() != "SBARQ":
@@ -390,7 +390,7 @@ def main(argv):
             debug = True
 
     parser = stanford.StanfordParser()
-
+    # question input
     line = raw_input("Enter line: ")
 
     while line != 'stop':
