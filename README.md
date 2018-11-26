@@ -2,9 +2,9 @@
 
 ## Setup
 Install Python 2.7
-pip install nltk
-[Download Stanford Parser](http://nlp.stanford.edu/software/stanford-parser-full-2015-04-20.zip) 
-python2 read.py
+<br /> pip install nltk
+<br /> [Download Stanford Parser](http://nlp.stanford.edu/software/stanford-parser-full-2015-04-20.zip) 
+<br /> python2 read.py
 
 ## Baseline
 Build Triples (S,V,O) (First without parser and then with) - Find the triples (embeddings) that match with the question and output them.
